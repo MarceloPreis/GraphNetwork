@@ -14,6 +14,7 @@ namespace GraphNetwork
             network.Connect(3, 4);
 
             Console.WriteLine($"Is 0 connected to 1? {network.Query(0, 1)}");
+            Console.WriteLine($"Is 1 connected to 0? {network.Query(0, 1)}");
             Console.WriteLine($"Connection level between 0 and 1: {network.LevelConnection(0, 1)}");
 
             Console.WriteLine($"Is 0 connected to 4? {network.Query(0, 4)}");
