@@ -1,0 +1,51 @@
+# Build outputs
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userprefs
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+.vscode/*
+
+# Rider IDE
+.idea/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuget.cache
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# DotCover
+*.dotCover
+
+# Visual Studio temp files
+*.tmp
+*.log
+*.vspscc
+*_i.c
+*_p.c
+*_h.h
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Mac
+.DS_Store
+
+# Linux
+*.swp
