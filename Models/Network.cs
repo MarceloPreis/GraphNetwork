@@ -24,6 +24,7 @@ namespace GraphNetwork.Models
             CheckIndexes(a, b);
 
             elements[a].Connect(elements[b]);
+            elements[b].Connect(elements[a]);
         }
 
         public void Disconnect(int a, int b)
@@ -31,6 +32,7 @@ namespace GraphNetwork.Models
             CheckIndexes(a, b);
 
             elements[a].Disconnect(elements[b]);
+            elements[b].Disconnect(elements[a]);
         }
 
         public bool Query(int a, int b)
@@ -64,6 +66,7 @@ namespace GraphNetwork.Models
                 {
                     if (!visited.Contains(neighbor))
                     {
+
                         queue.Add(neighbor);
                         levels.Add(level + 1);
                         visited.Add(neighbor);
